@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const Marker = require("../models/markers");
-const { checkBody } = require("../modules/checkBody");
+const { checkBody } = require("../modules/checkbody");
 
 router.post("/", (req, res) => {
   if (!checkBody(req.body, ["nickname", "name", "latitude", "longitude"])) {
